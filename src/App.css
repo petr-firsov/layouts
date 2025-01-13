@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.view-icon {
+  cursor: pointer;
+  height: 30px;
+}
+
+/*Общая разметка элементов товара*/
+.product-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-button {
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+}
+
+.product-button:hover {
+  background-color: grey;
+  border: 1px solid grey;
+  color: white;
+}
+
+/* Оформление карточек*/
+.product-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 300px;
+  height: 350px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+
+  box-shadow: 0 1px 2px grey;
+  border-radius: 5px;
+}
+
+.product-name-box {
+  margin-top: 20px;
+}
+
+.product-empty-box {
+  height: 60%;
+}
+
+.product-purchase-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  color: red;
+}
+
+/*Оформление списка*/
+.product-list-element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+  margin-bottom: 5px;
+
+  background-color: rgb(243, 243, 243);
+}
+
+.product-image {
+  max-height: 80px;
+}
+
+.product-price {
+  color: red;
+}
