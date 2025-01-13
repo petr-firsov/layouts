@@ -19,7 +19,8 @@ export default function CardsView({products}) {
     const shownCards = products.map(product => {
         return (
             <ShopCard 
-            product={product}/>
+            product={product}
+            key={product.name}  />
         )
     })
     return (

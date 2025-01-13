@@ -15,7 +15,8 @@ export default function ListView({items}) {
     const showItemsList = items.map(item => {
         return (
             <ShopItem
-            product={item} />
+            product={item} 
+            key={item.name} />
         )
     });
 
