@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { products } from "./cards";
+import { products } from "./products";
 import IconSwitch from "./IconSwitch";
-import CardsView from "./CardsView";
-import ListView from "./ListView";
+import CardsView from "./CardsView/CardsView";
+import ListView from "./ListView/ListView";
 
 
 export default function Store() {

@@ -1,5 +1,6 @@
-// Показ карточками
-function ShopCard({product}) {
+import PropTypes from "prop-types"
+
+export function ShopCard({product}) {
     return (
         <div className="product-card" style={{backgroundImage: `url(${product.img})`, backgroundSize: 'contain'}}>
             <div className="product-name-box">
@@ -15,17 +16,6 @@ function ShopCard({product}) {
     )
 }
 
-export default function CardsView({products}) {
-    const shownCards = products.map(product => {
-        return (
-            <ShopCard 
-            product={product}
-            key={product.name}  />
-        )
-    })
-    return (
-        <div className="product-cards-grid">
-            {shownCards}
-        </div>
-    )
+ShopCard.propTypes = {
+    product: PropTypes.object,
 }

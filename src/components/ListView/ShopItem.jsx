@@ -1,6 +1,7 @@
-// Показ списком
-function ShopItem({product}) {
-    return(
+import PropTypes from "prop-types"
+
+export function ShopItem({product}) {
+    return (
         <div className="product-list-element">
             <img className="product-image" src={product.img} />
             <div className="product-name">{product.name}</div>
@@ -11,18 +12,6 @@ function ShopItem({product}) {
     )
 }
 
-export default function ListView({items}) {
-    const showItemsList = items.map(item => {
-        return (
-            <ShopItem
-            product={item} 
-            key={item.name} />
-        )
-    });
-
-    return (
-        <div className="product-cards-grid">
-            {showItemsList}
-        </div>
-    )
+ShopItem.propTypes = {
+    product: PropTypes.object,
 }
